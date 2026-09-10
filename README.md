@@ -9,13 +9,18 @@ Site institucional estático de advocacia trabalhista empresarial. A identidade 
 3. Em **Build and deployment**, selecione **Deploy from a branch**.
 4. Escolha `main`, a pasta `/ (root)` e clique em **Save**.
 
-O site não exige instalação nem compilação. O e-mail `samiresgalvaoadvogada@zohomail.com` já está configurado em todos os botões de contato.
+O site não exige instalação nem compilação. Já estão configurados:
+
+- WhatsApp: `+55 27 98844-7051`
+- E-mail: `samiresgalvaoadvogada@zohomail.com`
+- Instagram: `@samiresgalvaoadvogada`
+- Atendimento empresarial em todo o Brasil
 
 ## Atualizações futuras
 
-- `index.html`: textos, serviços e e-mail
+- `index.html`: textos, soluções, artigos e contatos
 - `styles.css`: cores, tipografia e layout
 - `script.js`: menu do celular e ano do rodapé
-- `assets`: logo, fontes e fotografias
+- `assets`: logo oficial, fontes e fotografias corporativas sem pessoas
 
-Quando WhatsApp, OAB, cidade e redes sociais forem definidos, eles podem ser incluídos sem alterar a estrutura visual.
+O número da OAB poderá ser incluído posteriormente sem alterar a estrutura visual.
