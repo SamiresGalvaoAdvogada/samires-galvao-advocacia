@@ -15,7 +15,7 @@
 :root {
   --navy: #0b151f;
   --navy-light: #14222e;
-  --red: #f00036;
+  --gold: #c5a15a;
   --white: #ffffff;
   --muted: #c3cbd1;
   --line: #52616d;
@@ -116,7 +116,7 @@ h1, h2, h3, .statement p {
   align-items: flex-start;
   gap: 5px;
   background: var(--navy);
-  border-bottom: 4px solid var(--red);
+  border-bottom: 4px solid var(--gold);
 }
 
 .main-nav.open { display: flex; }
@@ -161,7 +161,7 @@ h1, h2, h3, .statement p {
   width: 28px;
   height: 4px;
   flex: 0 0 28px;
-  background: var(--red);
+  background: var(--gold);
 }
 
 .hero {
@@ -182,7 +182,7 @@ h1, h2, h3, .statement p {
 
 .hero h1 em {
   display: inline;
-  color: var(--red);
+  color: var(--gold);
   font-style: normal;
 }
 
@@ -211,8 +211,8 @@ h1, h2, h3, .statement p {
   align-items: center;
   justify-content: space-between;
   gap: 18px;
-  background: var(--red);
-  color: var(--white);
+  background: var(--gold);
+  color: var(--navy);
   font-size: 16px;
   font-weight: 800;
   line-height: 1.35;
@@ -237,7 +237,7 @@ h1, h2, h3, .statement p {
 }
 
 .text-link span {
-  color: var(--red);
+  color: var(--gold);
   font-size: 21px;
   transition: transform .25s ease;
 }
@@ -275,7 +275,8 @@ h1, h2, h3, .statement p {
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 16px;
-  background: var(--red);
+  background: var(--gold);
+  color: var(--navy);
 }
 
 .hero-media figcaption strong {
@@ -286,14 +287,14 @@ h1, h2, h3, .statement p {
 
 .hero-media figcaption span {
   padding-left: 15px;
-  border-left: 1px solid rgba(255,255,255,.65);
+  border-left: 1px solid rgba(11,21,31,.45);
   font-size: 13px;
   line-height: 1.45;
 }
 
 .statement {
   padding: 62px var(--page);
-  background: var(--red);
+  background: var(--gold);
 }
 
 .statement p {
@@ -302,7 +303,7 @@ h1, h2, h3, .statement p {
   font-size: clamp(43px, 13vw, 66px);
 }
 
-.statement strong { color: var(--white); }
+.statement strong { color: var(--navy); }
 
 .solutions,
 .articles {
@@ -352,7 +353,7 @@ h1, h2, h3, .statement p {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: var(--red);
+  background: var(--gold);
   transform: translateY(101%);
   transition: transform .4s cubic-bezier(.2,.75,.25,1);
 }
@@ -384,19 +385,23 @@ h1, h2, h3, .statement p {
   transition: color .3s ease;
 }
 
-.solution-card:hover p { color: var(--white); }
+.solution-card:hover,
+.solution-card:focus-within { color: var(--navy); }
+
+.solution-card:hover p,
+.solution-card:focus-within p { color: var(--navy); }
 
 .card-arrow {
   position: absolute;
   top: 24px;
   right: 24px;
-  color: var(--red);
+  color: var(--gold);
   font-size: 26px;
   transition: transform .3s ease, color .3s ease;
 }
 
 .solution-card:hover .card-arrow {
-  color: var(--white);
+  color: var(--navy);
   transform: rotate(-45deg);
 }
 
@@ -432,7 +437,8 @@ h1, h2, h3, .statement p {
   left: 0;
   z-index: 2;
   padding: 11px 18px;
-  background: var(--red);
+  background: var(--gold);
+  color: var(--navy);
   font-family: Oswald, sans-serif;
   font-size: 21px;
   line-height: 1;
@@ -500,7 +506,7 @@ h1, h2, h3, .statement p {
 
 .publication-copy .category {
   margin: 0 0 22px;
-  color: var(--red);
+  color: var(--gold);
   font-size: 13px;
   font-weight: 800;
   line-height: 1.35;
@@ -532,29 +538,30 @@ h1, h2, h3, .statement p {
 
 .read-more b {
   padding-left: 12px;
-  color: var(--red);
+  color: var(--gold);
   font-size: 19px;
 }
 
 .publication:hover .publication-copy,
-.publication:focus .publication-copy { background: var(--red); }
+.publication:focus .publication-copy { background: var(--gold); }
 
 .publication:hover .publication-copy .category,
 .publication:focus .publication-copy .category,
 .publication:hover .publication-copy > p,
 .publication:focus .publication-copy > p,
 .publication:hover .read-more b,
-.publication:focus .read-more b { color: var(--white); }
+.publication:focus .read-more b { color: var(--navy); }
 
 .publication:hover .publication-image img,
 .publication:focus .publication-image img { transform: scale(1.04); }
 
 .contact {
   padding: 68px var(--page) 74px;
-  background: var(--red);
+  background: var(--gold);
+  color: var(--navy);
 }
 
-.contact .eyebrow > span { background: var(--white); }
+.contact .eyebrow > span { background: var(--navy); }
 
 .contact h2 {
   max-width: 720px;
@@ -585,7 +592,7 @@ h1, h2, h3, .statement p {
   margin-top: 35px;
   display: grid;
   gap: 0;
-  border-top: 1px solid rgba(255,255,255,.55);
+  border-top: 1px solid rgba(11,21,31,.4);
 }
 
 .contact-line {
@@ -593,7 +600,7 @@ h1, h2, h3, .statement p {
   padding: 17px 0;
   display: grid;
   gap: 3px;
-  border-bottom: 1px solid rgba(255,255,255,.55);
+  border-bottom: 1px solid rgba(11,21,31,.4);
   font-size: 16px;
   line-height: 1.45;
   overflow-wrap: anywhere;
@@ -714,7 +721,7 @@ h1, h2, h3, .statement p {
     right: 100%;
     bottom: 2px;
     height: 3px;
-    background: var(--red);
+    background: var(--gold);
     transition: right .25s ease;
   }
 
@@ -736,9 +743,9 @@ h1, h2, h3, .statement p {
     transition: background .25s ease, color .25s ease;
   }
 
-  .header-action span { color: var(--red); }
-  .header-action:hover { background: var(--red); color: var(--white); }
-  .header-action:hover span { color: var(--white); }
+  .header-action span { color: var(--gold); }
+  .header-action:hover { background: var(--gold); color: var(--navy); }
+  .header-action:hover span { color: var(--navy); }
 
   .hero {
     min-height: 720px;

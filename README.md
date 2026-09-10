@@ -1,6 +1,6 @@
 # Site da Dra. Samires Galvão
 
-Site institucional estático de advocacia trabalhista empresarial. A identidade usa azul-preto, vermelho, tipografia condensada e uma composição editorial inspirada em grandes escritórios empresariais internacionais. O layout foi construído primeiro para celulares e depois adaptado para monitores.
+Site institucional estático de advocacia trabalhista empresarial. A identidade usa azul-preto, dourado sóbrio, tipografia condensada e uma composição editorial inspirada em grandes escritórios empresariais internacionais. O layout foi construído primeiro para celulares e depois adaptado para monitores.
 
 ## Publicar no GitHub Pages
 
