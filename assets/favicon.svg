@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="8" fill="#123c34"/>
-  <text x="32" y="42" text-anchor="middle" fill="#f4f0e8" font-family="Georgia,serif" font-size="29">SG</text>
-  <rect x="20" y="49" width="24" height="2" fill="#9c5d47"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="8" fill="#0b151f"/><path fill="#f00036" d="M8 10h24v10H19v8h12v10H19v17H8zm29 0h20v10H48v8h8v10h-8v8h10v9H37z"/></svg>

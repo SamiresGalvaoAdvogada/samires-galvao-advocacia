@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 150" role="img" aria-labelledby="title desc">
-  <title id="title">Samires Galvão</title><desc id="desc">Advocacia Trabalhista Empresarial</desc>
-  <g fill="#123c34">
-    <text x="0" y="101" font-family="Georgia, serif" font-size="105">SG</text>
-    <rect x="196" y="18" width="2" height="110" fill="#9c5d47"/>
-    <text x="232" y="66" font-family="Georgia, serif" font-size="42">Samires Galvão</text>
-    <text x="235" y="106" font-family="Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="3">ADVOCACIA TRABALHISTA EMPRESARIAL</text>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 150" role="img" aria-labelledby="title"><title id="title">Dra. Samires Galvão</title><text x="4" y="108" fill="#f00036" font-family="Arial Black,Arial,sans-serif" font-size="116" font-weight="900" letter-spacing="-16">sg</text><g fill="#0b151f" font-family="Arial,Helvetica,sans-serif"><text x="158" y="55" font-size="34" font-weight="800">Dra. Samires</text><text x="158" y="96" font-size="34" font-weight="800">Galvão</text><text x="159" y="125" font-size="13" font-weight="700" letter-spacing="2">ADVOCACIA EMPRESARIAL</text></g></svg>

@@ -1,39 +1,21 @@
 # Site da Dra. Samires Galvão
 
-Site institucional estático para advocacia trabalhista empresarial. Não exige instalação, banco de dados ou processo de compilação.
+Site institucional estático de advocacia trabalhista empresarial. A identidade usa azul-preto, vermelho, tipografia condensada e uma composição editorial inspirada em grandes escritórios empresariais internacionais.
 
-## Antes de publicar
+## Publicar no GitHub Pages
 
-Abra `script.js` e preencha o objeto `siteConfig` com:
-
-- WhatsApp com código do país e DDD, usando apenas números
-- Número formatado que aparecerá na página
-- E-mail profissional
-- Cidade e região atendida
-- Número da OAB com a respectiva UF
-
-Confira também os textos de atuação com a Dra. Samires.
-
-## Publicação no GitHub Pages
-
-1. Envie todos os arquivos e a pasta `assets` para a raiz do repositório.
+1. Substitua os arquivos antigos do repositório pelos arquivos deste pacote, incluindo a pasta `assets`.
 2. Abra **Settings > Pages** no GitHub.
-3. Em **Build and deployment**, escolha **Deploy from a branch**.
-4. Escolha a branch `main`, a pasta `/ (root)` e salve.
+3. Em **Build and deployment**, selecione **Deploy from a branch**.
+4. Escolha `main`, a pasta `/ (root)` e clique em **Save**.
 
-## Publicação no Cloudflare Pages
+O site não exige instalação nem compilação. O e-mail `samiresgalvaoadvogada@zohomail.com` já está configurado em todos os botões de contato.
 
-Conecte o repositório ao Cloudflare Pages e use:
+## Atualizações futuras
 
-- Framework preset: `None`
-- Build command: deixe vazio
-- Build output directory: `/`
+- `index.html`: textos, serviços e e-mail
+- `styles.css`: cores, tipografia e layout
+- `script.js`: menu do celular e ano do rodapé
+- `assets`: logo, fontes e fotografias
 
-## Arquivos principais
-
-- `index.html`: textos e estrutura da página
-- `styles.css`: identidade visual e adaptação para celular
-- `script.js`: menu e dados de contato
-- `assets`: logos, fontes e fotografia da primeira tela
-
-O site foi criado com HTML, CSS e JavaScript puros para facilitar a manutenção.
+Quando WhatsApp, OAB, cidade e redes sociais forem definidos, eles podem ser incluídos sem alterar a estrutura visual.

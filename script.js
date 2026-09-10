@@ -1,60 +1,14 @@
-/*
-  Preencha os dados abaixo antes de publicar.
-  O WhatsApp deve conter apenas números, com código do país e DDD.
-*/
-const siteConfig = {
-  whatsapp: "",
-  whatsappLabel: "[PREENCHER NÚMERO]",
-  email: "",
-  city: "[PREENCHER CIDADE E REGIÃO]",
-  oab: "OAB/UF [PREENCHER]"
-};
-
-const menuButton = document.querySelector(".menu-button");
-const navigation = document.querySelector(".main-nav");
-
-function closeMenu() {
-  menuButton.setAttribute("aria-expanded", "false");
-  navigation.classList.remove("open");
-  document.body.classList.remove("menu-open");
-}
-
-menuButton.addEventListener("click", () => {
-  const willOpen = menuButton.getAttribute("aria-expanded") !== "true";
-  menuButton.setAttribute("aria-expanded", String(willOpen));
-  navigation.classList.toggle("open", willOpen);
-  document.body.classList.toggle("menu-open", willOpen);
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.main-nav');
+toggle?.addEventListener('click', () => {
+  const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+  toggle.setAttribute('aria-expanded', String(!isOpen));
+  toggle.setAttribute('aria-label', isOpen ? 'Abrir menu' : 'Fechar menu');
+  nav?.classList.toggle('open', !isOpen);
 });
-
-navigation.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") closeMenu();
-});
-
-const whatsapp = document.querySelector('[data-contact="whatsapp"]');
-const email = document.querySelector('[data-contact="email"]');
-const city = document.querySelector(".contact-line.static strong");
-
-if (siteConfig.whatsapp) {
-  whatsapp.href = `https://wa.me/${siteConfig.whatsapp}`;
-  whatsapp.target = "_blank";
-  whatsapp.rel = "noopener noreferrer";
-  whatsapp.querySelector("strong").textContent = siteConfig.whatsappLabel;
-} else {
-  whatsapp.setAttribute("aria-disabled", "true");
-  whatsapp.addEventListener("click", (event) => event.preventDefault());
-}
-
-if (siteConfig.email) {
-  email.href = `mailto:${siteConfig.email}`;
-  email.querySelector("strong").textContent = siteConfig.email;
-} else {
-  email.setAttribute("aria-disabled", "true");
-  email.addEventListener("click", (event) => event.preventDefault());
-}
-
-city.textContent = siteConfig.city;
-document.querySelectorAll(".professional-id, .site-footer div > p:first-child").forEach((item) => {
-  item.textContent = siteConfig.oab;
-});
-document.getElementById("year").textContent = new Date().getFullYear();
+nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+  toggle?.setAttribute('aria-expanded', 'false');
+  toggle?.setAttribute('aria-label', 'Abrir menu');
+  nav.classList.remove('open');
+}));
+document.querySelector('#year').textContent = new Date().getFullYear();
